@@ -2,7 +2,6 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
     android:fillViewport="true">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -48,6 +47,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="I suck at video games. Please buy me books to git gud. Or get me books from my wishlist c:"/>
+
+            <!-- favorite genres header -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:text="My favorite genres:" />
+
+            <!-- favorite genres body -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Video games, how to self-improve, dealing with inner insecurities"/>
         </LinearLayout>
 
         <Button
