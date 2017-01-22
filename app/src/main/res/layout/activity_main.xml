@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:paddingBottom="8dp"
-    android:paddingLeft="8dp"
-    android:paddingRight="8dp"
-    android:paddingTop="8dp"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
 
-    <ImageButton
-        android:id="@+id/child1"
-        android:layout_width="170dp"
-        android:layout_height="200dp"
-        android:src="@drawable/austin"
-        android:onClick="goToAustin"/>
-    <TextView
-        android:id="@+id/child1text"
-        android:layout_width="170dp"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:textAppearanceMedium"
+    <GridView
+        android:numColumns="2"
         android:gravity="center"
-        android:text="Austin Kroll, 20"
-        android:layout_below="@id/child1"/>
-</RelativeLayout>
+        android:columnWidth="100dp"
+        android:stretchMode="columnWidth"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/grid" />
+
+</LinearLayout>
