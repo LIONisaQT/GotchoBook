@@ -44,7 +44,7 @@ public class CustomGrid extends BaseAdapter {
         LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
         if (view == null) {
-            grid = new View(mContext);
+            // grid = new View(mContext);
             grid = inflater.inflate(R.layout.grid_single, null);
 
             TextView textView = (TextView)grid.findViewById(R.id.grid_text);
